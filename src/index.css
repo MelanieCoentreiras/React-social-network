@@ -6,16 +6,53 @@ body {
   background: #10151a;
 }
 
+h1 {
+  text-align: center;
+  margin-bottom: 40px;
+}
+
+h1,
+h4 {
+  color: white;
+}
+
+button {
+  border: none;
+  background: white;
+  border-radius: 8px;
+  padding: 4px 10px 4px 10px;
+  margin-top: 6px;
+  cursor: pointer;
+}
+
 .tweet {
   background: #ddf573;
   border-radius: 10px;
   padding: 30px;
   width: fit-content;
   min-width: 300px;
+  max-width: 300px;
+  position: relative;
 }
 
 .tweet h3,
 p {
   margin: 0;
   margin-bottom: 10px;
+}
+
+.tweet-container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 30px;
+}
+
+.tweet .delete {
+  position: absolute;
+  right: 0px;
+  top: 0px;
+  background: white;
+  border: none;
+  cursor: pointer;
+  margin-right: 5px;
 }
